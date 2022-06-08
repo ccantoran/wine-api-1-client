@@ -1,7 +1,7 @@
 document.querySelector('button').addEventListener('click', apiRequest)
 
 async function apiRequest(){
-    const wineOption = document.querySelector('input').value
+    const wineOption = document.querySelector('select').value
     try{
         const response = await fetch(`https://wine-app-1.herokuapp.com/api/${wineOption}`)
         const data = await response.json()
