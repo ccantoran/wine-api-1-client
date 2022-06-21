@@ -7,8 +7,19 @@ async function apiRequest(){
         const data = await response.json()
 
         console.log(data)
-        document.querySelector('h2').innerText = data.variety
-        //data.obj[object[key]]
+        document.getElementById('wineVariety').innerText = data[0].variety
+        document.getElementById('wineVintage').innerText = data[0].vintage
+        document.getElementById('wineLocation').innerText = data[0].location
+        document.getElementById('wineBold').innerText = data[0].boldness
+        document.getElementById('wineSmooth').innerText = data[0].smooth
+        document.getElementById('wineSweetness').innerText = data[0].sweetness
+        document.getElementById('wineAcidic').innerText = data[0].acidic
+        document.getElementById('winePair').innerText = data[0].pairings
+        document.getElementById('winePrimary').innerText = data[0].primary
+        document.getElementById('wineSecondary').innerText = data[0].secondary
+        document.getElementById('wineKeywords').innerText = data[0].keywords
+        document.getElementById('winePrice').innerText = data[0].price
+        
     }catch(error){
         console.log(error)
     }
@@ -16,16 +27,12 @@ async function apiRequest(){
 
 
 
-
-
-
-
-
-
-
+//make it appear in the DOM
+//document.getElementByID('alienName').innerText = data.speciesName
+//doument.getElementById('alienWorld').innerText = data.homeworld   
+//doument.getElementById('alienFeatures').innerText = data.features
 
 //apiTemplate from pokemon example
-
 // function apiRequest(){
 //     const choice = document.querySelector('input').value
 //     const url = `https://wine-app-1.herokuapp.com/api/${choice}`
