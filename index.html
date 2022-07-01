@@ -6,12 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- external stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- external font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59c032d6c4.js" crossorigin="anonymous"></script>
     <title>Wine API</title>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png?v=1"/>
 </head>
 <body>
-    <h1>wine api</h1>
-    <a href="#">go to reverse search</a>
+    <nav>
+        <div class="logo">
+            <img src="logo.png">
+            <div>
+                <h1>Wine Not?</h1>
+                <h2>the wine gateway</h2>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Wine Picker</a></li>
+            <li><a href="#">Wine Search</a></li>
+            <li><a href="#">Wine Reverse Search</a></li>
+        </ul>
+    </nav>
+    <main>
+    
     <form>
+        <div>Check Out Our Inventory!</div>
+        <p>select one of the wines in our current inventory</p>
         <!-- <input> -->
         <select id="wine">
             <option value="paraduxx">Paraduxx</option>
@@ -35,23 +58,41 @@
             <option value="kris">Kris</option>
             <option value="gouguenheim">Gouguenheim</option>
         </select>
-        <button type="button" name="button">tell me the dets</button>
+        <button type="button" name="button">show me the details</button>
     </form>
-    <h2></h2>
-    <div id="wineVariety"></div>
-    <div id="wineVintage"></div>
-    <div id="wineLocation"></div>
-    <div id="wineBold"></div>
-    <div id="wineSmooth"></div>
-    <div id="wineSweetness"></div>
-    <div id="wineAcidic"></div>
-    <div id="winePair"></div>
-    <div id="winePrimary"></div>
-    <div id="wineSecondary"></div>
-    <div id="wineKeywords"></div>
-    <div id="winePrice"></div>
+    <div id="grid">
+        <div>Wine Variety</div>
+        <div id="wineVariety"></div>
+        <div>Wine Vintage/Year Wine was Made</div>
+        <div id="wineVintage"></div>
+        <div>wine location</div>
+        <div id="wineLocation"></div>
+        <div>Wine Boldness Level (1-6)</div>
+        <div id="wineBold"></div>
+        <div>Wine Smoothness Level (1-6)</div>
+        <div id="wineSmooth"></div>
+        <div>Wine Sweetness Level (1-6)</div>
+        <div id="wineSweetness"></div>
+        <div>Wine Acidity Level (1-6)</div>
+        <div id="wineAcidic"></div>
+        <div>Best Paired With</div>
+        <div id="winePair"></div>
+        <div>Primary Fruit Notes</div>
+        <div id="winePrimary"></div>
+        <div>Secondary Age Notes</div>
+        <div id="wineSecondary"></div>
+        <div>Descriptive Keywords</div>
+        <div id="wineKeywords"></div>
+        <div>Average Price Point</div>
+        <div id="winePrice"></div>
+    </div>
+</main>
+<footer>
+    <i class="fa-solid fa-arrow-up"><a href="#"></a></i>
+    <div><a href="#">Back to the Top</a></div>
+</footer>
 
-    <script src="main.js"></script>
+<script src="main.js"></script>
 
 </body>
 </html>

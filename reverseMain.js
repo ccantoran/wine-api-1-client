@@ -12,7 +12,7 @@ async function apiRequest(){
         console.log(data[0].name)
         
         document.getElementById('wineVariety').innerText = data[0].name
-        document.getElementById('wineVariety1').innerText = data[0].location
+        document.getElementById('wineVariety1').innerText = `From: ${data[0].location}`
         
     }catch(error){
         console.log(error)

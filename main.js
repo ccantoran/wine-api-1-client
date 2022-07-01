@@ -6,7 +6,7 @@ async function apiRequest(){
         const response = await fetch(`https://wine-app-1.herokuapp.com/api/${wineOption}`)
         const data = await response.json()
 
-        console.log(data)
+
         document.getElementById('wineVariety').innerText = data[0].variety
         document.getElementById('wineVintage').innerText = data[0].vintage
         document.getElementById('wineLocation').innerText = data[0].location

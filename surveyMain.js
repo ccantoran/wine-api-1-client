@@ -22,34 +22,47 @@ async function allData(){
     try{
         const response = await fetch(`https://wine-app-1.herokuapp.com/api/`)
         const data = await response.json()
+        console.log(data)
 
+        var newArr = []
         for(let i=0; i<data.length; i++){
-           
+
             if((data[i].op == colorOptions) && 
                 (data[i].boldness >= boldOp1 && data[i].boldness <= boldOp2) && 
                 (data[i].sweetness >= sweetOp1 && data[i].sweetness <= sweetOp2 ) &&
                 (data[i].acidic >= acidOp1 && data[i].acidic <= acidOp2 ) &&
                 (data[i].price >= priceOp1 && data[i].price <= priceOp2 )){
-                var newArr = []
+                
                 newArr.push(data[i])
-
-                for(var j = 0; j<newArr.length; j++){
-                    var div = document.createElement('div')
-                    div.innerHTML = `${newArr[j].name} ${newArr[j].variety} ${newArr[j].vintage} ${newArr[j].keywords}`
-                    div.className = "wineResult"
-                    document.body.appendChild(div)
-                }
-            }
+                console.log(data[i])
+            }  
         }
+        for(let j = 0; j < newArr.length; j++){
+            if(newArr.length === 1){
+                document.getElementById('div0').innerText = `${newArr[j].name} ${newArr[j].variety} ${newArr[j].vintage}`
+                document.getElementById('div1').innerText = null
+                document.getElementById('div2').innerText = null
+                document.getElementById('div3').innerText = null
+            }else if(newArr.length === 2){
+                document.getElementById('div0').innerText = `${newArr[0].name} ${newArr[0].variety} ${newArr[0].vintage}`
+                document.getElementById('div1').innerText = `${newArr[1].name} ${newArr[1].variety} ${newArr[1].vintage}`
+                document.getElementById('div2').innerText = null
+                document.getElementById('div3').innerText = null
+                console.log(newArr[j].name)
+                // console.log(newArr[j+1].name)
+            }else if(newArr.length === 3){
+                document.getElementById('div0').innerText = `${newArr[0].name} ${newArr[0].variety} ${newArr[0].vintage}`
+                document.getElementById('div1').innerText = `${newArr[1].name} ${newArr[1].variety} ${newArr[1].vintage}`
+                document.getElementById('div2').innerText = `${newArr[2].name} ${newArr[2].variety} ${newArr[2].vintage}`
+                document.getElementById('div3').innerText = null
+            }else{
+            document.getElementById('div' + j).innerText = `${newArr[j].name} ${newArr[j].variety} ${newArr[j].vintage}`
+            console.log(newArr[j].name)
+            }
+        }   
     }catch(error){
         console.log(error)
     }
+    //make wine href appear
 }
-
-
-
-
-//see if it would be easier to integrate a loop with different options 
-//check if we can put in a range of values, might have to make a slider bar
-//see if we can put multiple wines in the DOM. (likely document.createElement('li'))
-
+           

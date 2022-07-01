@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "anek malayalam";
+    font-weight: 200;
+    padding: 0;
+}
+a:link{
+    text-decoration: none;
+    color:white;
+}
+a:visited{
+    color:white;
+}
+li{
+    list-style-type:none;
+}
+ul{
+    padding-left:0;
+}
+:root{
+    --main-color:rgb(152, 33, 33);
+    --sec-color:rgb(171, 170, 170)
+}
+body::-webkit-scrollbar{
+    width:0.25rem
+}
+body::-webkit-scrollbar-track{
+    background:rgb(181, 179, 179);
+}
+body::-webkit-scrollbar-thumb{
+    background:var(--main-color);
+}
+/*//////////////////
+nav
+/////////////////////*/
+nav{
+    display:flex;
+    justify-content: space-around;
+    border-bottom:var(--main-color) solid 10px;
+    width:100%; 
+    padding-bottom:1%;
+}
+.logo{
+    display:flex;
+}
+nav>div>img{
+    width:8em
+}
+.logo>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    text-align: center;
+}
+h1, h2{
+    margin:0;
+}
+h1{
+    font-size: 30px;
+}
+h2{ 
+    font-size: 16px;
+    color: var(--main-color);
+}
+nav>ul{
+    display:flex;
+    justify-content: space-around;
+    width:60%
+}
+nav>ul>li{
+    background: var(--main-color);
+    border-radius: 20px;
+    display:flex;
+    align-self:flex-end;
+    padding:10px;
+}
+nav>ul>li:hover{
+    background:var(--sec-color);
+    transition: 200ms ease;
+}
+nav>ul>li>a{
+    color:white;
+    font-weight: 600;
+}
+/*///////////////////////////
+            MAIN
+//////////////////////////*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+main{
+    height: fit-content;
+    background:url(wine5.jpg);
+    width:100%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    padding-bottom: 10%;
+}
+h3{
+    font-size: 30px;
+    text-shadow: 1px 1px grey;
+}
+main>p, form{
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow:1px 1px grey;
+}
+form>select{
+    margin:5px;
+    padding:5px;
+    border:none;
+    border-radius: 5px;
+}
+form>button{
+    border:none;
+    background-color: var(--main-color);
+    color:white;
+    padding:15px;
+    border-radius: 10px;
+    margin:10px 0;
+    font-size: 20px;
+}
+.outputDiv{
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 2px 2px grey;
+    display:flex;
+    justify-content: center;
+    color:white;
+}
+.outputDiv>div{
+    border:rgba(152, 33, 33, 0) solid;
+    text-align: center;
+    /* flex-basis: 250px; */
+    margin: 0 3px;
+}
+
+/*///////////////////////////
+            FOOTER
+//////////////////////////*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    background: var(--main-color);
+    color: white;
+    width:100%;
+    height: 100%;
+    font-size: 20px;
+}
+

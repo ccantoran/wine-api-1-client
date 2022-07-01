@@ -4,48 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="surveyStyles.css">
+    <!-- external font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59c032d6c4.js" crossorigin="anonymous"></script>
     <title>Survey Says!</title>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png?v=1"/>
 </head>
 <body>
-    <form>
-        <select id="redOrWhite">
-            <option value="red">Red</option>
-            <!-- <option value="white">White</option> -->
-        </select>
-        <select id="bold-range">
-            <!-- <option value="1-2">all cream</option> -->
-            <option value="3-4">splash of milk</option>
-            <!-- <option value="5-6">black</option> -->
-        </select>
-        <select id="sweet-range">
-            <option value="1-2">lime</option>
-            <!-- <option value="3-4">plums</option>
-            <option value="5-6">Ripe Mango</option> -->
-        </select>
-        <select id="acid-range">
-            <!-- <option value="1-2">sour candy</option> -->
-            <option value="3-4">fruit gummies</option>
-            <!-- <option value="5-6">milk chocolate</option> -->
-        </select>
-        <select id="price-range">
-            <option value="1-20">1-20</option>
-            <!-- <option value="20-40">20-40</option>
-            <option value="40-200">40+</option> -->
-        </select>
-        <button type="button" name="button">pick my wine</button>
-    </form>
-    <div id="div1">
-        <!-- <ul class="rappers">
-        <% for(let i=0; i < data.length; i++) {%>
-        <li class="wineOuput">
-            <span><%= data[i].name %></span>
-            <span><%= data[i].keywords %></span>
-        </li>
-        <% } %>
-    </ul> -->
-    </div>
-    <div id="div2"></div>
-    
+    <nav>
+        <div class="logo">
+            <img src="logo.png">
+            <div>
+                <h1>Wine Not?</h1>
+                <h2>the wine gateway</h2>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Wine Picker</a></li>
+            <li><a href="#">Wine Search</a></li>
+            <li><a href="#">Wine Reverse Search</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Flavor Profile Questionnaire</h3>
+        <p>Let us find you the perfect glass! We will select wines based on your food preferences</p>
+        <form>
+            <label for="redOrWhite">Do you prefer Red or White?</label>
+            <select id="redOrWhite">
+                <!-- <input type="radio">bing -->
+                <option value="red">Red</option>
+                <option value="white">White</option>
+            </select>
+            <label for="bold-range">What best describes how you like your coffee?</label>
+            <select id="bold-range">
+                <option value="1-2">a lot of cream and sugar!</option>
+                <option value="3-4">a couple splashes of milk/cream and some/no sugar</option>
+                <option value="5-6">black</option>
+            </select>
+            <label for="sweer-range">What is your favorite candy?</label>
+            <select id="sweet-range">
+                <option value="1-2">dark chocolate</option>
+                <option value="3-4">gummy bears</option>
+                <option value="5-6">jolly ranchers</option>
+            </select>
+            <label for="acid-range">what grouping of fruit do your like the best?</label>
+            <select id="acid-range">
+                <option value="1-2">strawberries/blueberries</option>
+                <option value="3-4">kiwi/pinapple</option>
+                <option value="5-6">grapefruit/lemons</option>
+            </select>
+            <label for="price-range">how much do you wish to spend?</label>
+            <select id="price-range">
+                <option value="1-20">$1 - 20</option>
+                <option value="20-40">$20 - 40</option>
+                <option value="40-200">$40+</option>
+            </select>
+            <button type="button" name="button">Pick My Wine!</button>
+        </form>
+        <p>We Recommend:</p>
+        <div class="outputDiv">
+            <div id="div0"></div>
+            <div id="div1"></div>
+            <div id='div2'></div>
+            <div id='div3'></div>
+        </div>
+    </main>
+
+
+    <footer>
+        <i class="fa-solid fa-arrow-up"><a href="#"></a></i>
+        <div><a href="#">Back to the Top</a></div>
+    </footer>
+
     <script src="surveyMain.js"></script>
 </body>
 </html>
+
