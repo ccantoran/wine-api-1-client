@@ -16,27 +16,30 @@
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <img src="logo.png">
-            <div>
-                <h1>Wine Not?</h1>
-                <h2>the wine gateway</h2>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <div class="navDiv">
+            <div class="logo">
+                <img src="logo.png">
+                <div>
+                    <h1>Wine Not?</h1>
+                    <h2>the wine gateway</h2>
+                </div>
             </div>
+            <ul>
+                <li class="firstli"><a href="https://winenotwinepicker.netlify.app/">About</a></li>
+                <li class="secondli"><a href="https://winenotwinepicker.netlify.app/surveyIndex.html">Wine Picker</a></li>
+                <li class="thirdli"><a href="https://winenotwinepicker.netlify.app/searchIndex.html">Wine Search</a></li>
+                <li class="fourthli"><a href="https://winenotwinepicker.netlify.app/reverseIndex.html">Wine Reverse Search</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
         </div>
-        <ul>
-            <li><a href="https://winenotwinepicker.netlify.app/">About</a></li>
-            <li><a href="https://winenotwinepicker.netlify.app/surveyIndex.html">Wine Picker</a></li>
-            <li><a href="https://winenotwinepicker.netlify.app/searchIndex.html">Wine Search</a></li>
-            <li><a href="https://winenotwinepicker.netlify.app/reverseIndex.html">Wine Reverse Search</a></li>
-        </ul>
     </nav>
     <main>
         <h3>Flavor Profile Questionnaire</h3>
-        <p>Let us find you the perfect glass! We will select wines based on your food preferences</p>
+        <p>Let us find you the perfect glass! Answer the questions based on your personal preferances</p>
         <form>
             <label for="redOrWhite">Do you prefer Red or White?</label>
             <select id="redOrWhite">
-                <!-- <input type="radio">bing -->
                 <option value="red">Red</option>
                 <option value="white">White</option>
             </select>
@@ -82,6 +85,7 @@
     </footer>
 
     <script src="surveyMain.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
 
