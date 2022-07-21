@@ -5,7 +5,7 @@ This project was created to help guide users who have never ventured the world o
 Check out the live site!
 https://winenotwinepicker.netlify.app/
 
-<img src="github%20winenot.png">
+<img src="github%20winenotopen.png" width="650" height="450">
 
 # How It Was Made 
 Tech used: HTML, CSS, Javascript and Node w/express on the serverside. 
