@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external style sheet -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+    <!-- external font links -->
+    <script src="https://kit.fontawesome.com/59c032d6c4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Catherine Cantoran Portfolio</title>
+    <link rel="shortcut icon" type="image/jpg" href="CC.png?v=1"/>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav>
+        <div class="nav-div">
+        CC
+        </div>
+        <ul class="nav-ul">
+            <li><a class="menu-ops" href="#portfolio">Portfolio</a></li>
+            <li><a class="menu-ops" href="#about">About</a></li>
+            <li><a class="menu-ops" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- MAIN PANEL -->
+    <main id="home">
+        <div>
+            <h1>Hello, I'm Catherine Cantoran</h1>
+            <p>Software Engineer, based in Chicago, IL.</p>
+        </div>
+        <img src="Untitled design (1).png" alt="pic-of-me">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/catherine-cantoran-1967a9b6/"><i class="fa-brands fa-linkedin-in"></i></i></a></li>
+            <li><a href="https://twitter.com/Catheri67786970"><i class="fa-brands fa-twitter"></i></i></a></li>
+            <li><a href="https://github.com/ccantoran"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://angel.co/u/catherine-cantoran"><i class="fa-brands fa-angellist"></i></a></li>
+        </ul>
+    </main>
+    <!-- PANEL 2 -->
+    <div class="panel-2" data-aos="fade-up" id="portfolio">
+       <h2>Portfolio.</h2> 
+        <ul class="pic-ul">
+            <li class="grid-row-2 box-2">
+                <a href="#">
+                <img src="personal.png" alt="personal-page">
+                </a>
+            </li>
+            <li class="grid-row-2 box-1">
+                <a href="https://winenotwinepicker.netlify.app/">
+                <img src="winenot.png" alt="WineNotWinePicker">
+                </a>
+            </li>
+            <li class="grid-bottom-border box-3">
+                HTML, CSS, Javascript, <a href="https://docs.google.com/document/d/1RcExcNcZUd1orcgyfpRuZeiFRje03b8ASLKUNP2iLUc/edit?usp=sharing">Design Documentation</a>
+            </li>
+            <li class="grid-bottom-border box-4">
+                HTML, CSS, Javascript, NodeJS, <a href="https://docs.google.com/document/d/1dXvHUZieX1pWHDv8JFCQXJDOOtsM7P00nNnCrx5mu1U/edit?usp=sharing">Design Documentation</a>
+            </li>
+            <!-- <li class="grid-row-2 viva box-5">
+                <p>COMING SOON</p>
+                <br>
+                <p>VIVA PARTY BUS</p>
+            </li> -->
+            <li class="grid-row-2 box-1">
+                <a href="https://www.jcpropertiesandconstruction.com/">
+                <img src="JCP.png" alt="jcproperties">
+                </a>
+            </li>
+            <li class="grid-row-2 box-6">
+                <a href="https://verseaux.netlify.app/">
+                    <img src="verseux.png" alt="verseux">
+                </a>
+            </li>
+            <li class="grid-bottom-border box-7">
+                HTML, CSS, Javascript, <a href="https://docs.google.com/document/d/1aWLCyoNDxrIRLgLnZzqDnscXJA-pJo9Vnd7qvNbNZNQ/edit?usp=sharing">Design Documentation</a>
+            </li>
+            <li class="grid-bottom-border box-8">
+                HTML, CSS, Javascript
+            </li>
+        </ul>
+    </div>
+    <!-- PANEL 3 -->
+    <div class="panel-3" id="about" data-aos="fade-up">
+        <h3>About.</h3>
+        <div class="about-div">
+            <p>
+            "Make your business vision a reality"
+            </p>
+            <p>
+            Hello, I'm Catherine Cantoran and I am a self-taught developer that 
+            enjoys helping up-and-coming businesses establish their online presence. In our modern world, having an online 
+            presence is essential. I help my clients bridge the technology gap and become fully digital through building a custom website, Search Engine
+            Optimization, UX research, advanced branding such as QR code customization and more. All of these techniques have helped 
+            my clients establish legitmacy in their brand and have a solid online image. Please 
+            continue to look around and explore my custom websites and their design documentation above!
+            </p>
+        </div>
+    </div>
+
+    <!-- PANEL 4 -->
+    <div class="panel-4" id="contact" data-aos="fade-up">
+        <h3>Lets Chat.</h3>
+        <form action="https://formsubmit.co/09cc8660087a6fd6b53a28b24284fd98" method ="POST" class="input-block">
+            <!--Honeypot-->
+            <input type="text" name="_honey" style="display: none">
+            
+            <input type="hidden" name="_next" value="https://catherinecantoran.com/thanks.html">
+            <div class="top-block">
+                <div>
+                <label>
+                    Name
+                    <input type="text" name="name">
+                </label>
+                </div>
+                <div>
+                <label>
+                    Email
+                    <input name="email" required>
+                </label>
+                </div>
+            </div>
+            <div class="mess-block">
+                <label>
+                    Message
+                    <textarea class="mess-box" name="message" id="message"></textarea>
+                </label>
+            </div>
+            
+            <div class="thanks">
+                <button type="submit">Submit</button>
+            </div>
+            
+        </form>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#home">
+            <div><i class="fa-solid fa-angles-up"></i></div>
+            <p>Back To The Top</p>
+        </a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        offset:180,
+        duration:800
+    });
+    </script>
+</body>
+</html>
