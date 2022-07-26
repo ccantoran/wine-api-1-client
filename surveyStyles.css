@@ -225,7 +225,8 @@ form>button{
     margin: 0 3px;
     padding: 2px 3px; 
     border-radius: 20px;
-    text-shadow: 5px 3px var(--main-color);
+    text-shadow: 2px 2px var(--main-color);
+    color: rgb(214, 211, 211);
 }
 @media screen and (max-width:340px){
     #bold-range{
