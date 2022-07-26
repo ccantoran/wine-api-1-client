@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="searchStyles.css">
+    <!-- external font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59c032d6c4.js" crossorigin="anonymous"></script>
+    <title>Wine Search</title>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png?v=1"/>
+</head>
+<body>
+    <nav>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <div class="navDiv">
+            <div class="logo">
+                <img src="logo.png">
+                <div>
+                    <h1>Wine Not?</h1>
+                    <h2>the wine gateway</h2>
+                </div>
+            </div>
+            <ul>
+                <li class="firstli"><a href="https://winenotwinepicker.netlify.app/">About</a></li>
+                <li class="secondli"><a href="https://winenotwinepicker.netlify.app/surveyIndex.html">Wine Picker</a></li>
+                <li class="thirdli"><a href="https://winenotwinepicker.netlify.app/searchIndex.html">Wine Search</a></li>
+                <li class="fourthli"><a href="https://winenotwinepicker.netlify.app/reverseIndex.html">Wine Reverse Search</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </div>
+    </nav>
+    <main>
+    
+    <form>
+        <div>Check Out Our Inventory!</div>
+        <p>select one of the wines in our current inventory</p>
+        <!-- <input> -->
+        <div class="selectButton">
+            <select id="wine">
+                <option value="paraduxx">Paraduxx</option>
+                <option value="Robert Mondavi">Robert Mondavi</option>
+                <option value="bevan cellars sugarloaf mountain vineyard">Bevan Cellars Sugarloaf Mountain Vineyard</option>
+                <option value="shafer one point five">Shafer One Point Five</option>
+                <option value="walter hansel south slope">Walter Hansel South Slope</option>
+                <option value="joh jos prum graacher himmelreich">Joh.Jos. Prum Graacher Himmelreich</option>
+                <option value="seghesio rockpile">Seghesio Rockpile </option>
+                <option value="scottswoode lyndenhurst">Scottswoode Lyndenhurst</option>
+                <option value="kristler hudson vineyard">Kristler Hudson Vineyard</option>
+                <option value="hamilton russell">Hamilton Russell</option>
+                <option value="amalaya">Amalaya</option>
+                <option value="la galope">La Galope</option>
+                <option value="the guide">The Guide</option>
+                <option value="sierra cantabria">Sierra Cantabria</option>
+                <option value="catena">Cantena</option>
+                <option value="vallana spanna">Vallana Spanna</option>
+                <option value="borsao bodegas">Borsao Bodega</option>
+                <option value="jual gil">Juan Gil</option>
+                <option value="kris">Kris</option>
+                <option value="gouguenheim">Gouguenheim</option>
+            </select>
+            <button type="button" name="button">show me the details</button>
+        </div>
+    </form>
+    <div id="grid">
+        <div class="divHeading">Wine Variety</div>
+        <div id="wineVariety"></div>
+        <div class="divHeading">Wine Vintage/Year Wine was Made</div>
+        <div id="wineVintage"></div>
+        <div class="divHeading">Wine Location</div>
+        <div id="wineLocation"></div>
+        <div class="divHeading">Wine Boldness Level (1-6)</div>
+        <div id="wineBold"></div>
+        <div class="divHeading">Wine Smoothness Level (1-6)</div>
+        <div id="wineSmooth"></div>
+        <div class="divHeading">Wine Sweetness Level (1-6)</div>
+        <div id="wineSweetness"></div>
+        <div class="divHeading">Wine Acidity Level (1-6)</div>
+        <div id="wineAcidic"></div>
+        <div class="divHeading">Best Paired With</div>
+        <div id="winePair"></div>
+        <div class="divHeading">Primary Fruit Notes</div>
+        <div id="winePrimary"></div>
+        <div class="divHeading">Secondary Age Notes</div>
+        <div id="wineSecondary"></div>
+        <div class="divHeading">Descriptive Keywords</div>
+        <div id="wineKeywords"></div>
+        <div class="divHeading">Average Price Point</div>
+        <div id="winePrice"></div>
+    </div>
+</main>
+<footer>
+    <i class="fa-solid fa-arrow-up"><a href="#"></a></i>
+    <div><a href="#">Back to the Top</a></div>
+</footer>
+
+<script src="searchMain.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+<!-- 
+<h1>Which Cocktail?</h1>
+		<input type="text" name="" value="">
+		<button type="button" name="button">Get Cocktail</button>
+
+		<h2>Name</h2>
+		<img src="" alt="">
+		<h3>Instructions</h3>
+
+		<script type="text/javascript" src="js/main.js"></script>  -->

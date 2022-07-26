@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="reverseStyles.css">
+    <!-- external font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/59c032d6c4.js" crossorigin="anonymous"></script>
+    <title>Reverse Search</title>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png?v=1"/>
+</head>
+<body>
+    <nav>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <div class="navDiv">
+            <div class="logo">
+                <img src="logo.png">
+                <div>
+                    <h1>Wine Not?</h1>
+                    <h2>the wine gateway</h2>
+                </div>
+            </div>
+            <ul>
+                <li class="firstli"><a href="https://winenotwinepicker.netlify.app/">About</a></li>
+                <li class="secondli"><a href="https://winenotwinepicker.netlify.app/surveyIndex.html">Wine Picker</a></li>
+                <li class="thirdli"><a href="https://winenotwinepicker.netlify.app/searchIndex.html">Wine Search</a></li>
+                <li class="fourthli"><a href="https://winenotwinepicker.netlify.app/reverseIndex.html">Wine Reverse Search</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h3>Can't remember the name of the specific wine you had?</h3>
+        <div>Using some paramaters, this will match with what we have in stock</div>
+        <form>
+            <label for="price">Price of wine</label>
+            <select id="price">
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="43">43</option>
+                <option value="45">45</option>
+                <option value="50">50</option>
+                <option value="80">80</option>
+                <option value="100">100</option>
+                <option value="140">140</option>
+                <option value="180">180</option>
+            </select>
+            <label for="price">Vintage of wine</label>
+            <select id="vintage">
+                <option value="2016">2016</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+            </select>
+            <label for="price">Variety of wine</label>
+            <select id="variety">
+                <option value="red blend">Red Blend</option>
+                <option value="cabernet sauvignon">Cabernet Sauvignon</option>
+                <option value="pinot noir">Pinot Noir</option>
+                <option value="riesling">Riesling</option>
+                <option value="zinfandel">Zinfandel</option>
+                <option value="chardonnay">Chardonnay</option>
+                <option value="malbec">Malbec</option>
+                <option value="sauvignon blanc">Sauvignon Blanc</option>
+                <option value="tempranillo">Tempranillo</option>
+                <option value="nebbiolo">Nebbiolo</option>
+                <option value="gernache">Gernache</option>
+                <option value="monstrell">Monstrell</option>
+                <option value="pinot grigio">Pinot Grigio</option>
+            </select>
+            <button type="button" name="button">Find the Name of the Wine</button>
+        </form>
+        <div id="wineVariety"></div>
+        <div id="wineVariety1"></div>
+    </main>
+    <footer>
+        <i class="fa-solid fa-arrow-up"><a href="#"></a></i>
+        <div><a href="#">Back to the Top</a></div>
+    </footer>
+
+    <script src="reverseMain.js"></script>
+    <script src="main.js"></script> 
+</body>
+</html>
