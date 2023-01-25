@@ -48,7 +48,7 @@ nav{
     display:flex;
     justify-content: space-around;
     border-bottom:var(--main-color) solid 10px;
-    width:100%; 
+    width:100%;
     padding-bottom:1%;
 }
 .logo{
@@ -71,7 +71,7 @@ h1{
     font-size: 30px;
     z-index: 1;
 }
-h2{ 
+h2{
     font-size: 16px;
     color: var(--main-color);
     z-index: 1;
@@ -98,16 +98,16 @@ h2{
 }
 .closeMenu, .openMenu{
     display:none;
-}   
+}
 @media screen and (max-width: 735px){
     nav{
        position: absolute;
-       width: 100%; 
+       width: 100%;
        margin:0;
        height:40px;
        text-align: center;
        background-color: var(--main-color);
-   } 
+   }
    .logo>img{
         display: none;
    }
@@ -170,7 +170,7 @@ h2{
 main{
     width:100%;
     height:800px;
-    background: url(mainwine1.jpg);
+    background: url(imgs/mainwine1.jpg);
     background-image: cover;
     display: flex;
     flex-direction: column;
@@ -191,7 +191,7 @@ h3{
 main>p{
     font-size: 22px;
     text-align: center;
-    text-shadow: 1px 1px grey;  
+    text-shadow: 1px 1px grey;
     width: 80%;
     opacity: 0;
     transform: translateY(3rem);
@@ -206,7 +206,7 @@ main>p{
 
 @media screen and (max-width: 520px){
     main{
-        background:url(mainwine5.jpg) ;
+        background:url(imgs/mainwine5.jpg) ;
         height:fit-content;
         padding: 10% 0;
         background-position: center;
@@ -223,7 +223,7 @@ main>p{
 }
     @media (min-width:520px) and (max-width: 900px){
         main{
-            background:url(mainwine2.jpg) ;
+            background:url(imgs/mainwine2.jpg) ;
             height:fit-content;
             padding: 10% 0;
             background-position: center;
@@ -232,7 +232,7 @@ main>p{
     }
         @media (min-width:901px) and (max-width: 1020px){
             main{
-                background:url(mainwine3.jpg) ;
+                background:url(imgs/mainwine3.jpg) ;
                 height:fit-content;
                 padding: 10% 0;
                 background-position: center;

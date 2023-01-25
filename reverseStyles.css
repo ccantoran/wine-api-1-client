@@ -47,7 +47,7 @@ nav{
     display:flex;
     justify-content: space-around;
     border-bottom:var(--main-color) solid 10px;
-    width:100%; 
+    width:100%;
     padding-bottom:1%;
 }
 .logo{
@@ -70,7 +70,7 @@ h1{
     font-size: 30px;
     z-index: 1;
 }
-h2{ 
+h2{
     font-size: 16px;
     color: var(--main-color);
     z-index: 1;
@@ -97,16 +97,16 @@ h2{
 }
 .closeMenu, .openMenu{
     display:none;
-}   
+}
 @media screen and (max-width: 735px){
     nav{
        position: absolute;
-       width: 100%; 
+       width: 100%;
        margin:0;
        height:40px;
        text-align: center;
        background-color: var(--main-color);
-   } 
+   }
    .logo>img{
         display: none;
    }
@@ -166,7 +166,7 @@ h2{
 //////////////////////////////*/
 
 main{
-    background:url(reverseimg.jpg);
+    background:url(imgs/reverseimg.jpg);
     width:100%;
     height:fit-content;
     background-image: contain;

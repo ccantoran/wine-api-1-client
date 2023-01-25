@@ -48,7 +48,7 @@ nav{
     display:flex;
     justify-content: space-around;
     border-bottom:var(--main-color) solid 10px;
-    width:100%; 
+    width:100%;
     padding-bottom:1%;
 }
 .logo{
@@ -71,7 +71,7 @@ h1{
     font-size: 30px;
     z-index: 1;
 }
-h2{ 
+h2{
     font-size: 16px;
     color: var(--main-color);
     z-index: 1;
@@ -98,16 +98,16 @@ h2{
 }
 .closeMenu, .openMenu{
     display:none;
-}   
+}
 @media screen and (max-width: 735px){
     nav{
        position: absolute;
-       width: 100%; 
+       width: 100%;
        margin:0;
        height:40px;
        text-align: center;
        background-color: var(--main-color);
-   } 
+   }
    .logo>img{
         display: none;
    }
@@ -168,7 +168,7 @@ main{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background:url(wine.jpg);
+    background:url(imgs/wine.jpg);
     background-size: cover;
     background-repeat:no-repeat;
     height:100%;
@@ -178,7 +178,7 @@ main{
 form{
     margin-top:50px;
     text-shadow: 1px 1px grey;
-    
+
 }
 form>div{
     text-align: center;

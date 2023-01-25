@@ -47,7 +47,7 @@ nav{
     display:flex;
     justify-content: space-around;
     border-bottom:var(--main-color) solid 10px;
-    width:100%; 
+    width:100%;
     padding-bottom:1%;
 }
 .logo{
@@ -70,7 +70,7 @@ h1{
     font-size: 30px;
     z-index: 1;
 }
-h2{ 
+h2{
     font-size: 16px;
     color: var(--main-color);
     z-index: 1;
@@ -97,16 +97,16 @@ h2{
 }
 .closeMenu, .openMenu{
     display:none;
-}   
+}
 @media screen and (max-width: 735px){
     nav{
        position: absolute;
-       width: 100%; 
+       width: 100%;
        margin:0;
        height:40px;
        text-align: center;
        background-color: var(--main-color);
-   } 
+   }
    .logo>img{
         display: none;
    }
@@ -172,7 +172,7 @@ form{
 }
 main{
     height: fit-content;
-    background:url(wine5.jpg);
+    background:url(imgs/wine5.jpg);
     width:100%;
     color:white;
     display: flex;
@@ -192,6 +192,10 @@ main>p, form{
     text-shadow:1px 1px grey;
     width:90vw;
     text-align: center;
+}
+main>p:nth-of-type(2){
+    border-bottom:rgb(152, 33, 33) solid 4px;
+    width:15%;
 }
 form>select{
     margin:5px;
@@ -214,15 +218,15 @@ form>button{
     display:flex;
     justify-content: center;
     color:white;
-    border: white solid;
-    background:var(--main-color);
-    border-radius: 20px;
     width:90%;
 }
 .outputDiv>div{
-    border:rgba(152, 33, 33, 0) solid;
     text-align: center;
     margin: 0 3px;
+    padding: 2px 3px;
+    border-radius: 20px;
+    text-shadow: 2px 2px var(--main-color);
+    color: rgb(214, 211, 211);
 }
 @media screen and (max-width:340px){
     #bold-range{
